@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 반 방명록</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background: #f5f7fb;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #2d3a8c;
+      margin-bottom: 32px;
+    }
+
+    .cards {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border-top: 5px solid #6c7ae0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .card:nth-child(4n+2) { border-top-color: #f2994a; }
+    .card:nth-child(4n+3) { border-top-color: #27ae60; }
+    .card:nth-child(4n+4) { border-top-color: #eb5757; }
+
+    .card-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-message {
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .card-date {
+      font-size: 0.85rem;
+      color: #999;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>우리 반 방명록</h1>
+
+  <section class="cards">
+    <article class="card">
+      <p class="card-name">김민수</p>
+      <p class="card-message">올해도 다 같이 즐겁게 지내자! 모두 화이팅 💪</p>
+      <p class="card-date">2026-10-15</p>
+    </article>
+    <article class="card">
+      <p class="card-name">이서연</p>
+      <p class="card-message">체육대회 때 진짜 재밌었어. 우리 반 최고!</p>
+      <p class="card-date">2026-10-15</p>
+    </article>
+    <article class="card">
+      <p class="card-name">박지훈</p>
+      <p class="card-message">시험 기간 다들 힘내고, 끝나면 같이 놀러 가자 😊</p>
+      <p class="card-date">2026-10-15</p>
+    </article>
+    <article class="card">
+      <p class="card-name">최유진</p>
+      <p class="card-message">항상 도와줘서 고마워. 남은 학기도 잘 부탁해!</p>
+      <p class="card-date">2026-10-15</p>
+    </article>
+  </section>
+</body>
+</html>
